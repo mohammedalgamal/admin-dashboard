@@ -71,7 +71,7 @@ body {
             grid-template-columns: 2fr 1fr;
 
             .left {
-                gap: 1rem;
+                gap: 1vw;
             }
 
             #search {
@@ -82,17 +82,17 @@ body {
 
             .right {
                 margin-right: 1rem;
-                gap: 2rem;
+                gap: 1rem;
                 justify-self: end;
 
                 .avatar {
-                    width: 3rem;
-                    height: 3rem;
-                    border-radius: 30px;
+                    width: 3vw;
+                    height: 3vw;
+                    border-radius: 100%;
                 }
 
                 div {
-                    font-size: 1.2rem;
+                    font-size: 1.1vw;
                     font-weight: 700;
                 }
             }
@@ -107,18 +107,18 @@ body {
                 gap: 1rem;
 
                 .avatar {
-                    width: 5rem;
+                    width: 4.3vw;
                     height: auto;
                     border-radius: 100%;
                 }
 
                 .small {
-                    font-size: 1rem;
+                    font-size: 1vw;
                     font-weight: 700;
                 }
 
                 .big {
-                    font-size: 1.5rem;
+                    font-size: 1.5vw;
                     font-weight: 700;
                 }
             }
@@ -128,9 +128,10 @@ body {
                 justify-self: end;
                 .btn {
                     background-color: $main-color;
+                    font-size: 1vw;
                     color: white;
-                    width: 6.5rem;
-                    height: 2.3rem;
+                    width: 6vw;
+                    height: 4vh;
                 }
                 .btn:hover {
                     border: 2px solid $main-color;

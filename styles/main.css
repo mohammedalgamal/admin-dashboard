@@ -58,7 +58,7 @@ body .header .upper {
   grid-template-columns: 2fr 1fr;
 }
 body .header .upper .left {
-  gap: 1rem;
+  gap: 1vw;
 }
 body .header .upper #search {
   width: 35vw;
@@ -67,16 +67,16 @@ body .header .upper #search {
 }
 body .header .upper .right {
   margin-right: 1rem;
-  gap: 2rem;
+  gap: 1rem;
   justify-self: end;
 }
 body .header .upper .right .avatar {
-  width: 3rem;
-  height: 3rem;
-  border-radius: 30px;
+  width: 3vw;
+  height: 3vw;
+  border-radius: 100%;
 }
 body .header .upper .right div {
-  font-size: 1.2rem;
+  font-size: 1.1vw;
   font-weight: 700;
 }
 body .header .lower {
@@ -88,16 +88,16 @@ body .header .lower .left {
   gap: 1rem;
 }
 body .header .lower .left .avatar {
-  width: 5rem;
+  width: 4.3vw;
   height: auto;
   border-radius: 100%;
 }
 body .header .lower .left .small {
-  font-size: 1rem;
+  font-size: 1vw;
   font-weight: 700;
 }
 body .header .lower .left .big {
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   font-weight: 700;
 }
 body .header .lower .right {
@@ -106,9 +106,10 @@ body .header .lower .right {
 }
 body .header .lower .right .btn {
   background-color: #1b494b;
+  font-size: 1vw;
   color: white;
-  width: 6.5rem;
-  height: 2.3rem;
+  width: 6vw;
+  height: 4vh;
 }
 body .header .lower .right .btn:hover {
   border: 2px solid #1b494b;
