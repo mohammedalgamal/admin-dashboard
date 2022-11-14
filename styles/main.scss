@@ -18,15 +18,15 @@ body {
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
 
     img {
-        filter: invert(1);
         width: 2vw;
         height: 3vh;
     }
 
     .sidebar {
+
         padding-top: 1rem;
         background-color: $main-color;
         grid-row: 1 / 6;
@@ -35,6 +35,11 @@ body {
         grid-template-rows: 1fr 2.2fr 3fr;
         align-items: start;
         justify-items: start;
+
+        img {
+            filter: invert(1);
+        }
+
         .logo {
             font-size: 2vw;
 
@@ -56,7 +61,42 @@ body {
     }
 
     .header {
+        height: 20vh;
         z-index: 1;
+        padding: 1rem 4rem;
+        @include make-grid(2, 1fr, 1, 1fr);
+        
+        .upper {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+
+            .left {
+                gap: 1rem;
+            }
+
+            #search {
+                width: 35vw;
+                height: 3vh;
+                border-radius: 30px;
+            }
+
+            .right {
+                margin-right: 1rem;
+                gap: 2rem;
+                justify-self: end;
+
+                .avatar {
+                    width: 3rem;
+                    height: 3rem;
+                    border-radius: 30px;
+                }
+
+                div {
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                }
+            }
+        }
     }
     .main-content {
         background-color: $third-color;

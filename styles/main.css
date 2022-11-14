@@ -9,10 +9,9 @@ body {
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 5fr;
-  grid-template-rows: 1fr 4fr;
+  grid-template-rows: 1fr 5fr;
 }
 body img {
-  filter: invert(1);
   width: 2vw;
   height: 3vh;
 }
@@ -27,6 +26,9 @@ body .sidebar {
   grid-template-rows: 1fr 2.2fr 3fr;
   align-items: start;
   justify-items: start;
+}
+body .sidebar img {
+  filter: invert(1);
 }
 body .sidebar .logo {
   font-size: 2vw;
@@ -44,7 +46,38 @@ body .sidebar .pages, body .sidebar .settings {
   margin-left: 1.7rem;
 }
 body .header {
+  height: 20vh;
   z-index: 1;
+  padding: 1rem 4rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+body .header .upper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+body .header .upper .left {
+  gap: 1rem;
+}
+body .header .upper #search {
+  width: 35vw;
+  height: 3vh;
+  border-radius: 30px;
+}
+body .header .upper .right {
+  margin-right: 1rem;
+  gap: 2rem;
+  justify-self: end;
+}
+body .header .upper .right .avatar {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 30px;
+}
+body .header .upper .right div {
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 body .main-content {
   background-color: #c9d9c2;
