@@ -12,16 +12,47 @@
     padding: 0;
 }
 
+
 body {
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 4fr;
 
+    img {
+        filter: invert(1);
+        width: 2vw;
+        height: 3vh;
+    }
+
     .sidebar {
+        padding-top: 1rem;
         background-color: $main-color;
         grid-row: 1 / 6;
+        color: white($text-color);
+        @include make-grid(3, 1fr, 1, 1fr);
+        grid-template-rows: 1fr 2.2fr 3fr;
+        align-items: start;
+        justify-items: start;
+        .logo {
+            font-size: 2vw;
+
+            img{
+                width: 5vw;
+                height: 7vh;
+            }
+        }
+
+        .sidebar-text {
+            font-size: 1.2vw;
+            margin-bottom: 1rem;
+            gap: 1rem;
+        }
+
+        .pages, .settings {
+            margin-left: 1.7rem;
+        }
     }
 
     .header {

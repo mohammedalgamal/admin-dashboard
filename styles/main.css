@@ -8,17 +8,45 @@ body {
   width: 100vw;
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 5fr;
   grid-template-rows: 1fr 4fr;
 }
+body img {
+  filter: invert(1);
+  width: 2vw;
+  height: 3vh;
+}
 body .sidebar {
-  background-color: rgb(73, 219, 71);
+  padding-top: 1rem;
+  background-color: #1b494b;
   grid-row: 1/6;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: 1fr 2.2fr 3fr;
+  align-items: start;
+  justify-items: start;
+}
+body .sidebar .logo {
+  font-size: 2vw;
+}
+body .sidebar .logo img {
+  width: 5vw;
+  height: 7vh;
+}
+body .sidebar .sidebar-text {
+  font-size: 1.2vw;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+body .sidebar .pages, body .sidebar .settings {
+  margin-left: 1.7rem;
 }
 body .header {
   z-index: 1;
 }
 body .main-content {
-  background-color: rgb(206, 255, 201);
+  background-color: #c9d9c2;
   grid-row: 2/6;
 }/*# sourceMappingURL=main.css.map */
