@@ -11,3 +11,21 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+
+    .sidebar {
+        background-color: $main-color;
+        grid-row: 1 / 6;
+    }
+
+    .main-content {
+        background-color: $third-color;
+        grid-row: 2 / 6;
+    }
+}

@@ -2,4 +2,20 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 4fr;
+}
+body .sidebar {
+  background-color: rgb(73, 219, 71);
+  grid-row: 1/6;
+}
+body .main-content {
+  background-color: rgb(206, 255, 201);
+  grid-row: 2/6;
 }/*# sourceMappingURL=main.css.map */
