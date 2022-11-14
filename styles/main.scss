@@ -97,6 +97,48 @@ body {
                 }
             }
         }
+
+        .lower {
+            align-self: center;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+
+            .left{
+                gap: 1rem;
+
+                .avatar {
+                    width: 5rem;
+                    height: auto;
+                    border-radius: 100%;
+                }
+
+                .small {
+                    font-size: 1rem;
+                    font-weight: 700;
+                }
+
+                .big {
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                }
+            }
+
+            .right {
+                gap: 1rem;
+                justify-self: end;
+                .btn {
+                    background-color: $main-color;
+                    color: white;
+                    width: 6.5rem;
+                    height: 2.3rem;
+                }
+                .btn:hover {
+                    border: 2px solid $main-color;
+                    background-color: white;
+                    color: $main-color;
+                }
+            }
+        }
     }
     .main-content {
         background-color: $third-color;

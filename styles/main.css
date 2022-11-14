@@ -79,6 +79,42 @@ body .header .upper .right div {
   font-size: 1.2rem;
   font-weight: 700;
 }
+body .header .lower {
+  align-self: center;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+body .header .lower .left {
+  gap: 1rem;
+}
+body .header .lower .left .avatar {
+  width: 5rem;
+  height: auto;
+  border-radius: 100%;
+}
+body .header .lower .left .small {
+  font-size: 1rem;
+  font-weight: 700;
+}
+body .header .lower .left .big {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+body .header .lower .right {
+  gap: 1rem;
+  justify-self: end;
+}
+body .header .lower .right .btn {
+  background-color: #1b494b;
+  color: white;
+  width: 6.5rem;
+  height: 2.3rem;
+}
+body .header .lower .right .btn:hover {
+  border: 2px solid #1b494b;
+  background-color: white;
+  color: #1b494b;
+}
 body .main-content {
   background-color: #c9d9c2;
   grid-row: 2/6;
