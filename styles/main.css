@@ -15,6 +15,9 @@ body .sidebar {
   background-color: rgb(73, 219, 71);
   grid-row: 1/6;
 }
+body .header {
+  z-index: 1;
+}
 body .main-content {
   background-color: rgb(206, 255, 201);
   grid-row: 2/6;
