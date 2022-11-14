@@ -1,0 +1,8 @@
+$main-color: rgb(129, 163, 78);
+$sec-color: #fff;
+$third-color: rgb(119, 128, 109);
+$text-color: #000;
+
+@function white($color) {
+    @return lighten($color, 100%);
+};

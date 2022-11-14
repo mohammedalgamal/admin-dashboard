@@ -1,0 +1,13 @@
+@import "./config";
+
+@mixin make-grid($rows, $row-size, $cols, $col-size) {
+    display: grid;
+    grid-template-columns: repeat($cols, $col-size);
+    grid-template-rows: repeat($rows, $row-size);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
