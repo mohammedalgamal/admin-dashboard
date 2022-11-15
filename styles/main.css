@@ -177,4 +177,28 @@ body .main-content .projects .card-body .card-icons {
   gap: 15px;
   grid-column: 2/3;
   place-self: end;
+}
+body .main-content .announcements,
+body .main-content .trending {
+  align-self: start;
+}
+body .main-content .announcements .name,
+body .main-content .trending .name {
+  font-size: 1.1vw;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+body .main-content .announcements .card-body,
+body .main-content .trending .card-body {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #fff;
+  width: 16vw;
+  height: 32vh;
+}
+body .main-content .announcements {
+  margin-top: 25px;
+}
+body .main-content .trending .card-body {
+  height: 32vh;
 }/*# sourceMappingURL=main.css.map */
