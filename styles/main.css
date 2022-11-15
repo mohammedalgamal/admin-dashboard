@@ -194,10 +194,43 @@ body .main-content .trending .card-body {
   padding: 10px;
   background-color: #fff;
   width: 16vw;
-  height: 32vh;
+  height: 34vh;
 }
 body .main-content .announcements {
   margin-top: 25px;
+}
+body .main-content .announcements .card-body {
+  display: grid;
+  place-items: center;
+}
+body .main-content .announcements .card-body .cards {
+  border-radius: 10px;
+  background-color: #fff;
+  width: 10vw;
+  height: 28vh;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+body .main-content .announcements .card-body .cards .titles {
+  font-size: 1vw;
+  font-weight: 900;
+}
+body .main-content .announcements .card-body .cards .text {
+  font-size: 0.7vw;
+  color: rgb(129, 129, 129);
+}
+body .main-content .announcements .card-body .cards .card1,
+body .main-content .announcements .card-body .cards .card2 {
+  border-bottom: 1px solid rgba(194, 194, 194, 0.618);
+}
+body .main-content .announcements .card-body .cards .card1 .text,
+body .main-content .announcements .card-body .cards .card2 .text {
+  margin-bottom: 10px;
+}
+body .main-content .announcements .card-body .cards .card2,
+body .main-content .announcements .card-body .cards .card3 {
+  margin-top: 15px;
 }
 body .main-content .trending .card-body {
   height: 32vh;

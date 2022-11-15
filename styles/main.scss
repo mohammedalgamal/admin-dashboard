@@ -228,12 +228,51 @@ body {
                 padding: 10px;
                 background-color: #fff;
                 width: 16vw;
-                height: 32vh;
+                height: 34vh;
             }
         }
 
         .announcements {
             margin-top: 25px;
+
+            .card-body {
+                display: grid;
+                place-items: center;
+
+
+                .cards {
+                    border-radius: 10px;
+                    background-color: #fff;
+                    width: 10vw;
+                    height: 28vh;
+                    @include make-grid(3, 1fr, 1, 1fr);
+
+
+                    .titles {
+                        font-size: 1vw;
+                        font-weight: 900;
+                    }
+
+                    .text {
+                        font-size: 0.7vw;
+                        color: rgb(129, 129, 129);
+                    }
+
+                    .card1,
+                    .card2 {
+                        border-bottom: 1px solid rgba(194, 194, 194, 0.618);
+
+                        .text {
+                            margin-bottom: 10px;
+                        }
+                    }
+
+                    .card2,
+                    .card3 {
+                        margin-top: 15px;
+                    }
+                }
+            }
         }
 
         .trending {
