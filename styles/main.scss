@@ -144,5 +144,50 @@ body {
     .main-content {
         background-color: $third-color;
         grid-row: 2 / 6;
+
+        .projects {
+
+            .card-body {
+                margin-left: 100px;
+                margin-top: 100px;
+
+
+                background: linear-gradient(
+                    to right, 
+                    rgb(188, 255, 101) 0%, 
+                    rgb(188, 255, 101) 2%, 
+                    white 2%, 
+                    white  100%
+                  );
+                width: 22vw;
+                height: 25vh;
+                border-radius: 10px;
+                display: grid;
+                grid: 3fr 1fr / 1fr 1fr;
+                padding: 30px;
+
+                .card-content {
+                    grid-column: 1 / 3;
+
+                    .title {
+                        font-size: 1vw;
+                        font-weight: 700;
+                    }
+    
+                    .text {
+                        font-size: 0.8vw;
+                        color: rgba(0, 0, 0, 0.519);
+                    }
+                }
+
+                .card-icons {
+                    gap: 15px;
+                    grid-column: 2 / 3;
+                    place-self: end;
+                }
+
+            }
+        }
+
     }
 }
