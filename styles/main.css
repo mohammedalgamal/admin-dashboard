@@ -234,4 +234,25 @@ body .main-content .announcements .card-body .cards .card3 {
 }
 body .main-content .trending .card-body {
   height: 32vh;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  justify-content: center;
+  padding-left: 25px;
+}
+body .main-content .trending .card-body .trend {
+  gap: 15px;
+}
+body .main-content .trending .card-body .trend .avatar {
+  width: 2.7vw;
+  height: auto;
+  border-radius: 100%;
+}
+body .main-content .trending .card-body .trend .big {
+  font-size: 0.9vw;
+  font-weight: 500;
+}
+body .main-content .trending .card-body .trend .small {
+  font-size: 0.7vw;
+  color: rgb(129, 129, 129);
 }/*# sourceMappingURL=main.css.map */

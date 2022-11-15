@@ -279,6 +279,29 @@ body {
         
             .card-body{
                 height: 32vh;
+                @include make-grid(4, 1fr, 1, 1fr);
+                justify-content: center;
+                padding-left: 25px;
+
+                .trend {
+                    gap: 15px;
+
+                    .avatar {
+                        width: 2.7vw;
+                        height: auto;
+                        border-radius: 100%;
+                    }
+
+                    .big {
+                        font-size: 0.9vw;
+                        font-weight: 500;
+                    }
+
+                    .small {
+                        font-size: 0.7vw;
+                        color: rgb(129, 129, 129);
+                    }
+                }
             }
 
         }
